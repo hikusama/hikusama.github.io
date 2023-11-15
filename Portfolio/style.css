@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #262626;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    background:black ;
+    height: 45vh;
+}
+.logo img{
+    height: 3rem;
+}
+.header nav{
+    padding: 15px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img{
+    height: 4.5rem;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a span{
+    color: #ff004f;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.welcome{
+    transform: translateY(-50%);
+    margin: 0 10%;
+    place-items: center;
+    display: flex;
+    justify-content: space-between;
+ }
+.welcome h2 span{
+    color: #ff004f;
+    font-size: 2.5rem;
+}
+.welcome h2{
+    font-size: 1.8rem;
+}
+.welcome img{
+    width: 30rem;
+}
+
+.employees li{
+    list-style: none;
+}
+
+.employees li section img{
+    height: 10rem;
+    border-radius: 10px;
+}
+.employees{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.heademp, .heademp2, .labers{
+    display: inline-block;
+    margin-bottom: 4rem;
+    
+}
+
+.heademp span, .heademp2 span, .labers span{
+    position: relative;
+    color: #ff004f;
+}
+.heademp h2, .heademp2 h2, .labers h2{
+    font-size: 2rem;
+}
+.heademp span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    bottom: -5px;
+}
+
+
+.heademp2 span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    bottom: -5px;
+}
+
+.labers span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    bottom: -5px;
+}
+
+.employees li{
+    margin-bottom: 3rem;
+}
+
+
+
+.employees li {
+    background: rgba(129, 119, 119, 0.04);
+    border-radius: 16px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 10% 3%;
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(129, 119, 119, 0.38);
+    
+}
+.employees li section{
+    justify-content: space-between;
+    display: flex;
+    column-gap: 5rem;
+}
+
+.employees li section p, .about li p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgb(189, 184, 184);
+}
+.employees li section p span{
+    color: #d8d8d8;
+}
+.employees section div h4{
+    font-size: 1.5rem;
+}
+
+
+
+.employees li section .desc ol ul .pers svg, .second svg, .third svg{
+    height: 40px;
+    border-radius:6px ;
+    margin-top:1rem ;
+}
+.desc ol ul{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.desc ol ul .skills{
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 10px;
+}
+.pers {
+    fill: rgb(255, 85, 0);
+}
+.second{
+    fill: rgb(50, 50, 202);
+}
+
+.third{
+    fill: yellow;
+}
+
+.employees li section .desc ol li{
+    text-align: center;
+    display: grid;
+    margin-top: 1rem;
+}
+
+.open{
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 5px;
+    place-items: center;
+}
+.open a{
+    text-decoration: none;
+    color: #fff;
+}
+.open svg{
+    cursor: pointer;
+    height: 20px;
+    fill: #d8d8d8;
+}
+.open span{
+    font-size: 15px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.employees li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.employees li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.allabout{
+
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 2rem;
+}
+.about{
+    display: flex;
+    flex-direction:column ;
+    place-items: center;
+    justify-content: center;
+}
+
+
+.about ul{
+    display: flex;
+    width: 55rem;
+    justify-content: center;
+    place-items: center;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.about li{
+    list-style: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 25rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(129, 119, 119, 0.38);
+    background-color: #414040;
+    box-shadow: 64px 17px 99px -6px rgba(0,0,0,0.58) inset;
+    -webkit-box-shadow: 64px 17px 99px -6px rgba(0,0,0,0.58) inset;
+    -moz-box-shadow: 64px 17px 99px -6px rgba(0,0,0,0.58) inset;
+}
+
+.uiabout{
+    height: 19rem;
+    width: 25rem;
+
+}
+.prog{
+    height: 19rem;
+    width: 25rem;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+
+.magnimob img{
+    transform: translate(7.5rem, -11rem) rotate(45deg);
+    height: 10rem;
+    animation-name: magnimob;
+    animation-duration: 6s ;
+    animation-iteration-count: infinite;
+
+}
+@keyframes magnimob{
+    0%{
+        transform: translate(7.5rem, -11rem)  rotate(45deg);
+    }
+    30%{
+        transform: translate(8rem, -12rem)  rotate(45deg);  
+    }
+    60%{
+        transform: translate(7rem, -12rem)  rotate(45deg);  
+    }
+
+    100%{
+    transform: translate(7.5rem, -11rem) rotate(45deg);
+
+    }
+}
+
+.prog img{
+    filter: blur(5px);
+    height: 5rem;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: prog;
+}
+
+@keyframes prog {
+
+    60%{
+        filter: blur(5px);
+    }
+    100%{
+        filter: blur(0px);
+        
+    }
+}
+
+
+.about ul.vibot {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about ul li p{
+    text-align: center;
+}
+
+.employees .mub:hover{
+    box-shadow: 64px 17px 99px -6px rgba(0,0,0,0.58) inset;
+    -webkit-box-shadow: 64px 17px 99px -6px rgba(0,0,0,0.58) inset;
+    -moz-box-shadow: 64px 17px 99px -6px rgba(0,0,0,0.58) inset;
+    transform:translateY(-5px);
+}
+
+.allserv{
+    text-align: center;
+}
+
+.allserv ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 9%;
+    row-gap: 2.2rem;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.allserv ul li{
+    animation-name: serbis;
+    animation-duration: 3s;
+    list-style: none;
+    height: 15rem;
+    padding: 0 2%;
+    display: flex;
+    column-gap:2.2rem ;
+    place-items: center;
+    justify-content: center;
+    width: 15rem;
+    border-radius: 40px;
+    background: #262626;
+    box-shadow: inset 23px 23px 46px #151515,
+                inset -23px -23px 46px #373737;
+}
+
+@keyframes serbis {
+    0%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-10rem);
+    }
+    70%{
+        transform: translateY(-10rem);
+
+    }
+}
+
+.allserv ul li img{
+    height: 6rem;
+}
+
+
+.allserv ul li span{
+    color: #ff004f;
+}
+.allserv ul li p{
+    cursor: default;
+    color: #e3e3e3;
+}
