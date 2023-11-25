@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.loadout{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loadout img{
+    height: 4rem;
+    
+
+}
+#frontani{
+    animation-name: frontan;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes frontan {
+    0%, 100%{
+        transform: rotate(0) translate(0);
+    }
+    50%{
+        transform: translateX(-2rem);
+    }
+    65%{
+        transform: translateX(-2rem) rotate(360deg);
+    }
+}
