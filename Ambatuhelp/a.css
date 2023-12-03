@@ -209,8 +209,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100vw;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 1rem;
 }
