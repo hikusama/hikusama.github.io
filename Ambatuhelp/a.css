@@ -1049,8 +1049,7 @@ hr {
     transform: translateX(0) !important;
 }
 
-.bish,
-.bish2 {
+.bish {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
@@ -1076,16 +1075,58 @@ hr {
 .about ol {
     width: 80%;
 }
-
-.about .abPara p {
-    font-size: 1.2rem;
+ 
+#nn{
+    border: solid #ff004f 2px;
+    background: rgb(0, 0, 0);
+    border-radius: 32% 68% 33% 67% / 64% 32% 68% 36%  ;
+}
+.pc{
+    height: 100%;
+    display: flex;
+    column-gap: 2rem;
+    place-items: center;
+}
+.pc > *:nth-child(1){
+    animation-name: evrim;
 
 }
+.pc > *:nth-child(2){
+    animation-name: evrim2;
+}
 
-.about .abPara p,
+.pc img{
+    height: 13rem !important;
+    width: 13rem !important;
+    opacity: 100% !important;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+    border-radius: 50%;
+}
+@keyframes evrim {
+    0%, 100%{
+        transform: rotate(0) ;
+    }50%{
+        transform: rotate(1460deg);
+    }
+}
+@keyframes evrim2 {
+    0%, 100%{
+        transform: rotate(0) ;
+    }50%{
+        transform: rotate(-1460deg);
+    }
+}
+
+ 
+
+ 
 .about section li p {
     /* color: #d0d0d0; */
     color: #2b2b2b;
+    text-align: center;
+    display: grid;
+    place-items: center;
     font-family: sans-serif;
 
 }
@@ -1115,14 +1156,11 @@ hr {
     position: absolute;
     width: 5px;
 }
-
-.about section li,
-.abPara {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.5s, transform 0.5s;
+.about section{
+    row-gap: 1.8rem;
 }
 
+.about section li,
 .about section {
     column-gap: 3rem;
     display: flex;
@@ -1133,6 +1171,7 @@ hr {
 .about section li:nth-child(odd) {
     border-radius: 71% 29% 56% 44% / 59% 27% 73% 41%;
     display: grid;
+    height: 15rem;
     overflow: hidden;
     place-items: center;
     background: rgb(100, 100, 100);
@@ -1148,10 +1187,7 @@ hr {
 }
 
 .about section li {
-    display: grid;
-    row-gap: .5rem;
-    width: 15rem;
-    /* color: #d0d0d0; */
+    width: 16rem;
     color: #2b2b2b;
 }
 

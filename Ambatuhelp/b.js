@@ -241,16 +241,8 @@ function changeImage() {
 
   const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-  const aboutElement = document.getElementById("abtyo");
   const servicesElement = document.getElementById("servyo");
 
-  if (aboutElement) {
-    observer.observe(aboutElement);
-  }
-
-  if (servicesElement) {
-    observer.observe(servicesElement);
-  }
  
 
 
@@ -261,7 +253,6 @@ function changeImage() {
     var arteam = document.querySelectorAll('.ourtm li');
 
 
-    var aboutlab = document.querySelector('.abPara');
     
    
 
@@ -283,10 +274,6 @@ function changeImage() {
                 aboutch.classList.add('bish');
             }
         });
-
-        if (isInViewport(aboutlab)) {
-            aboutlab.classList.add('bish2');
-        }
         
         howtoap.forEach(function (howtoap) {
             if (isInViewport(howtoap)) {
