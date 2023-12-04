@@ -24,6 +24,9 @@ let arpic = document.querySelector('.im');
 let port = document.querySelectorAll('.in');
 let bd = document.body;
 
+
+
+
 function change() {
     if (checkbox.checked) {
         logotop.src = 'portpic/whitelogo.png';
@@ -149,34 +152,61 @@ function change() {
 }
 
 
+let basic = document.getElementById('bs');
+let standard = document.getElementById('st');
+let premium = document.getElementById('pr');
 
-function showForm() {
-    var outms = document.querySelector('.oit');
-    var checkbox = document.getElementById('toggleCheckbox');
+let basicC = document.getElementById('bss');
+let standardC = document.getElementById('stt');
+let premiumC = document.getElementById('prr');
 
-    if (checkbox.checked) {
-        outms.classList.add('hidden');
-    } else {
-        outms.classList.remove('hidden');
+ 
+
+
+
+document.querySelector('.plan').addEventListener('change', function() {
+    if (basic.checked) {
+        basicC.classList.add('bC');
+        standardC.classList.remove('sC');
+        premiumC.classList.remove('pC');
+    } else if (standard.checked) {
+        basicC.classList.remove('bC');
+        standardC.classList.add('sC');
+        premiumC.classList.remove('pC');
+    } else if (premium.checked) {
+        basicC.classList.remove('bC');
+        standardC.classList.remove('sC');
+        premiumC.classList.add('pC');
     }
-}
-
-
+});
 
 
 
 function openChatForm(service) {
     document.getElementById('chatFormTitle').innerText = 'Inquire about ' + service;
     document.getElementById('chatFormContainer').style.display = 'block';
+    if (service == "formol") {
+        document.getElementById('fol').style.display = 'block';
+        document.getElementById('nside').style.display = 'none';
+ 
+    } else {
+        document.getElementById('fol').style.display = 'none';
+        document.getElementById('nside').style.display = 'block';
+
+    }
     document.getElementById('overlay').style.display = 'block';
 }
 
 function closeChatForm() {
+     
     document.getElementById('chatFormContainer').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
+    document.getElementById('bs').value = '';
+    document.getElementById('st').value = '';
+    document.getElementById('pr').value = '';
 }
 
 function submitForm() {
@@ -184,28 +214,47 @@ function submitForm() {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
+
     if (!name || !email || !message) {
         alert('Please enter valid data in all fields.');
         return;
     }
 
-    const formData = {
-        serviceName: document.getElementById('chatFormTitle').innerText,
-        name: name,
-        email: email,
-        message: message
-    };
+    if (!n2 || !e2 || !ph) {
+        alert('Please enter valid data in all fields.');
+        return;
+    }
+    // const formData = {
+    //     serviceName: document.getElementById('chatFormTitle').innerText,
+    //     name: name,
+    //     email: email,
+    //     message: message
+    // };
 
-    const formDataKey = 'chatFormData';
-    const existingData = JSON.parse(localStorage.getItem(formDataKey)) || [];
-    existingData.push(formData);
-    localStorage.setItem(formDataKey, JSON.stringify(existingData));
+    // const formDataKey = 'chatFormData';
+    // const existingData = JSON.parse(localStorage.getItem(formDataKey)) || [];
+    // existingData.push(formData);
+    // localStorage.setItem(formDataKey, JSON.stringify(existingData));
 
     alert('Form data submitted successfully!');
 
     closeChatForm();
 }
 
+function submitForm2(){
+
+    const n2 = document.getElementById('Name2').value;
+    const e2 = document.getElementById('Email2').value;
+    const ph = document.getElementById('Phone').value;
+
+    if (!n2 || !e2 || !ph) {
+        alert('Please enter valid data in all fields.');
+        return;
+    }
+    alert('Form data submitted successfully!');
+
+    closeChatForm();
+}
 
 
 
