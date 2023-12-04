@@ -209,7 +209,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap;
+
     align-items: center;
     column-gap: 1rem;
 }
@@ -879,7 +880,7 @@ hr {
     justify-content: space-around;
     flex-wrap: wrap;
     column-gap: 2rem;
-    margin: 10% 5%;
+    margin: 5rem 5%;
 }
 
 .ourtm li p {
@@ -1071,6 +1072,13 @@ hr {
     color: #fff;
 }
 
+.abol li{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 .about ol {
     width: 80%;
 }
@@ -1078,7 +1086,7 @@ hr {
 #nn{
     border: solid #ff004f 2px;
     background: rgb(0, 0, 0);
-    border-radius: 32% 68% 33% 67% / 64% 32% 68% 36%  ;
+    border-radius:68% 32% 67% 33% / 33% 70% 30% 67% ;
 }
 .pc{
     height: 100%;
@@ -1132,10 +1140,9 @@ hr {
 
 
 .about ul {
-    margin-top: 2rem;
+    margin: 7rem 0 10rem;
     display: grid;
     row-gap: 3rem;
-
     place-items: center;
 }
 
@@ -1186,6 +1193,9 @@ hr {
 }
 
 .about section li {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.5s, transform 0.5s ;
     width: 16rem;
     color: #2b2b2b;
 }
