@@ -493,9 +493,9 @@ hr {
 
 .hu li {
     width: 12rem;
-    /* opacity: 0;
+    opacity: 0;
     transform: translateX(-40px);
-    transition: opacity 0.5s, transform 0.5s; */
+    transition: opacity 0.5s, transform 0.5s;
     list-style: none;
     display: inline-block;
 }
@@ -621,9 +621,9 @@ hr {
     border-radius: 1rem;
     display: grid;
     width: 12rem;
-    /* transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
     opacity: 0;
-    transform: translateX(-40px); */
+    transform: translateX(-40px);
     background: #e0e0e0;
     box-shadow: 18px 18px 36px #c7c7c7,
         -18px -18px 36px #f9f9f9;
