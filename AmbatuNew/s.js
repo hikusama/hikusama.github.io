@@ -5,3 +5,4 @@ setTimeout(function () {
     loader.classList.add('hidden');
     overtap.classList.add('oberhid');
   }, 4000);
+  

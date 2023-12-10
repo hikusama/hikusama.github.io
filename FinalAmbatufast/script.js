@@ -2,6 +2,7 @@
 var imageIndex = 0;
 var imageSources = [ "images/alquin.png", "images/geo.jpg", "images/brendo.jpg", "images/unnamed (1).png ","images/IDK.png"];
 
+
 function changeImage() {
     var imageElement = document.getElementById("image");
 

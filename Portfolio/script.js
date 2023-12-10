@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var employees = document.querySelectorAll('.employees li');
     var aboutUl = document.querySelector('.about ul');
 
+    
     function isInViewport(element) {
         var rect = element.getBoundingClientRect();
         return (
