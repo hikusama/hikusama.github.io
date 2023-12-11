@@ -301,7 +301,18 @@ p {
 
 }
 
-
+@media screen and (max-width:1370px) {
+    .nav-logo img{
+        height: 80px;
+        width: 80px;
+    }
+    header .content h1 {
+        font-size: 2.3rem !important;
+    }
+    header .content p{
+        font-size: 11px;
+    }
+}
 
 
 @media screen and (max-width:953px) {
