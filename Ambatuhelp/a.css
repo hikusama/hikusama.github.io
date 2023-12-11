@@ -452,11 +452,7 @@ hr {
 
 
 
-
-*{
-    margin: 0;
-    padding:0;
-}
+ 
 .hu0 h1::before {
     left: -10px;
     content: ' ';
