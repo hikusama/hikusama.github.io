@@ -7,7 +7,10 @@
     font-family: puppy;
     src: url('font/pop.ttf');
 }
-
+@font-face {
+    font-family: tin;
+    src: url('font/tin.ttf');
+}
 @font-face {
     font-family: sa;
     src: url('font/sa.ttf');
@@ -332,7 +335,7 @@ p {
 
 
     .welcome .butr button:nth-child(1):hover {
-        box-shadow: inset 3rem 0 blue !important;
+        box-shadow: inset 3rem 0 rgb(8,151,230) !important;
     }
 
     .welcome .butr button:nth-child(2):hover {
@@ -432,7 +435,7 @@ p {
 
 
 .welcome .butr button:nth-child(1):hover {
-    box-shadow: inset 4rem 0 blue;
+    box-shadow: inset 4rem 0 rgb(8,151,230);
 }
 
 .welcome .butr button:nth-child(2):hover {
@@ -546,66 +549,14 @@ h2 {
 
 
 
-.about {
-    display: grid;
-    place-items: center;
-
-}
-
-.about ol {
-    padding: 5% 5%;
-    margin: 0 3%;
-    border-radius: 15px;
-    background: linear-gradient(rgba(239, 72, 1, 0.733), rgba(255, 187, 1, 0.719));
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4rem;
-
-}
 
 
-.about li {
-    list-style: none;
-    width: 26rem;
 
 
-}
-
-.about li:nth-child(1) {
-    display: grid;
-    place-items: center;
-}
 
 
-.about img {
-    height: 15rem;
-    width: 19rem;
-}
 
-.about p {
-    width: 26rem;
-}
 
-.btonab button {
-    border: solid 1px;
-    cursor: pointer;
-    height: 2.2rem;
-    width: 6rem;
-    font-size: .9rem;
-    transition: .5s;
-    color: #fff;
-    background: rgb(255, 122, 1);
-}
-
-.btonab button:hover {
-    box-shadow: inset 3rem 0 blue;
-
-}
-
-.about ul {
-    row-gap: 2rem;
-}
 
 
 
@@ -655,30 +606,7 @@ h2 {
 .who ul li img {
     height: 6rem;
 }
-
-/* .who ul li img:nth-child(1){
-    transform: translateY(2rem);
-}
-
-.who ul li img:nth-child(2){
-    transform: translateY(5.6rem, 5.1rem);
-}
-
-.who ul li img:nth-child(3){
-
-    transform: translateY(8.2rem);
-}
-
-.who ul li img:nth-child(4){
-    transform: translate(11.2rem, 2rem);
-
-}
-
-.who ul li img:nth-child(5){
-    transform: translate(11.4rem, 8.4rem);
-} */
-
-
+ 
 
 
 
@@ -798,6 +726,13 @@ h2 {
 
 
 
+
+
+
+
+
+
+
 .wus {
     text-align: center;
     margin-top: 18rem;
@@ -866,7 +801,7 @@ h2 {
 }
 
 .wus ul li button:hover {
-    box-shadow: inset 3rem 0 0 0 blue;
+    box-shadow: inset 3rem 0 0 0 rgb(8,151,230);
     transform: scale(1.1);
 }
 
@@ -890,7 +825,7 @@ h2 {
     position: fixed;
     z-index: -1;
     animation-name: bl1;
-    box-shadow: 0 0 5000px 60px blue;
+    box-shadow: 0 0 5000px 60px rgb(8,151,230);
     animation-duration: 13s;
     animation-iteration-count: infinite;
 }
@@ -923,6 +858,13 @@ h2 {
     }
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -996,6 +938,14 @@ h2 {
 
     height: 5rem;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1082,7 +1032,7 @@ h2 {
     background: gold;
 }
 .pplan ul li:nth-child(4)::before{
-    background: linear-gradient(to top,gold,blue,#fff) ;
+    background: linear-gradient(to top,gold,rgb(8,151,230),#fff) ;
 }
 
 
@@ -1107,6 +1057,97 @@ h2 {
 .pplan ul ol img{
     height: 1rem;
 }
+
+
+
+
+
+
+
+
+.prof{
+    
+}
+
+.prof ol{
+    display: flex;
+    gap: 5rem;
+    place-items: center;
+    justify-content: center;
+    background: #43545c;
+}
+
+.prof li{
+    list-style: none;
+}
+ 
+hr{
+    border: solid .1px rgb(8,151,230);
+    height: 3rem;
+    
+}
+
+.prof span{
+    color: #00acee;
+}
+
+.prof h3{
+    font-family:tin;
+    font-size: 2rem;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+.prof h4{
+    font-family: sans-serif;
+    color: #fff;
+
+    font-weight: 00;
+}
+
+#pictur{
+    border-radius: 20px;
+    height: 9rem;
+}
+.bottomprof{
+    display: flex;
+}
+.prof .bottomprof section3:nth-child(1){
+display: flex;
+place-items: start;
+}
+.prof h5{
+    color: #00acee;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-variant: small-caps;
+}
+.prof .bottomprof section3:nth-child(2){
+    gap: 1rem;
+    display: flex;
+}
+.prof section3 img{
+    height: 2rem;
+    border-radius: 5px;
+}
+.prof section4{
+    display: flex;
+    gap: .5rem;
+}
+.prof section4 img{
+    height: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1173,6 +1214,7 @@ h2 {
 .bom input {
     margin-top: .5rem;
 }
+ 
 
 #mssg {
     padding: .5rem;
@@ -1219,7 +1261,7 @@ h2 {
     0%,100%{
         background: rgb(239, 71, 1);
     }50%{
-        background: blue;  
+        background: rgb(8,151,230);  
     }
 }
 

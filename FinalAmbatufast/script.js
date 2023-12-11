@@ -23,25 +23,24 @@ function changeImage() {
 let cbox = document.getElementById('check');
 let side = document.getElementById('sd');
 
-let nli = document.querySelectorAll('nav ul li'); // Assuming you meant 'nav' instead of 'na'
+let nli = document.querySelectorAll('nav ul li');  
 
 function handleCheckboxChange() {
   if (cbox.checked) {
     nli.forEach(function(unli, index) {
       setTimeout(function() {
         unli.classList.add('navli');
-      }, 200 * index); // Different timeout for each list item
+      }, 200 * index); 
     });
   } else {
     nli.forEach(function(unli, index) {
       setTimeout(function() {
         unli.classList.remove('navli');
-      }, 200 * index); // Different timeout for each list item
+      }, 200 * index);  
     });
   }
 }
 
-// Add an event listener for the checkbox change event
 cbox.addEventListener('change', handleCheckboxChange);
 
      
