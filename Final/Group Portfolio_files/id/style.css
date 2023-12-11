@@ -520,11 +520,16 @@ section h2 span,
     justify-content: center;
 } */
 
+.outprof{
+    display: grid;
+    place-items: center;
+}
 
 .profile {
     display: flex;
     flex-wrap: wrap;
-    margin: 4rem 15%;
+    margin: 4rem 0;
+    width: 60rem;
     justify-content: space-around;
     gap: 2rem;
     
