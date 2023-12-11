@@ -4,7 +4,7 @@ setTimeout(function () {
     var loader = document.getElementById('loader');
     loader.classList.add('hidden');
     overtap.classList.add('oberhid');
-  }, 0);
+  }, 4000);
 
 
   var checkbox = document.querySelector('.ui-switch input[type="checkbox"]');
