@@ -1070,6 +1070,8 @@ h2 {
 }
 
 .prof ol{
+    width: 48rem;
+    height: 15rem;
     display: flex;
     gap: 5rem;
     place-items: center;
