@@ -930,6 +930,15 @@ footer {
     }
 }
 
+@media (max-width: 980px){
+    .profile{
+        width: auto;
+        margin:4rem 3% ;
+    }
+}
+
+
+
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -942,6 +951,8 @@ footer {
 
     border-radius: 10px;
     
-    background: #f0f0f0;
+    background: #000000;
 }
+
+
 
